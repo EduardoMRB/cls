@@ -40,10 +40,6 @@ class AppKernel extends Kernel
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
 
-            // PAGE
-            new Sonata\PageBundle\SonataPageBundle(),
-            new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
-
             // NEWS
             new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
@@ -62,11 +58,8 @@ class AppKernel extends Kernel
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\IntlBundle\SonataIntlBundle(),
             new Sonata\FormatterBundle\SonataFormatterBundle(),
-            new Sonata\CacheBundle\SonataCacheBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\SeoBundle\SonataSeoBundle(),
-            new Sonata\NotificationBundle\SonataNotificationBundle(),
-            new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
 
             // CMF Integration
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),

@@ -3,9 +3,6 @@
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #   prefix:   /_internal
 
-sonata_demo:
-    resource: "@SonataDemoBundle/Resources/config/routing/demo.xml"
-
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 
@@ -24,18 +21,6 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /change-password
-
-sonata_cache_cache:
-    resource: '@SonataCacheBundle/Resources/config/routing/cache.xml'
-    prefix: /
-
-sonata_page_cache:
-    resource: '@SonataPageBundle/Resources/config/routing/cache.xml'
-    prefix: /
-
-sonata_page_exceptions:
-    resource: '@SonataPageBundle/Resources/config/routing/exceptions.xml'
-    prefix: /page
 
 sonata_media_gallery:
     resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'

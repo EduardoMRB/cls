@@ -2,6 +2,7 @@ parameters:
 #    cls_site.example.class: Cls\SiteBundle\Example
 
 services:
-#    cls_site.example:
-#        class: %cls_site.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    cls.form.type.estimate:
+        class: Cls\SiteBundle\Form\EstimateType
+        tags:
+            - { name: form.type, alias: cls_estimate_form }

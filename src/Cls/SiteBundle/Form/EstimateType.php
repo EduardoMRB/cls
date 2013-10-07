@@ -11,7 +11,22 @@ class EstimateType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-
+        	->add('email', 'email')
+        	->add('name', null, array(
+        		'label' => 'Nome',
+    		))
+        	->add('phone', null, array(
+        		'label' => 'Telefone',
+        		'required' => false,
+    		))
+        	->add('file', null, array(
+        		'label' => 'Arquivo',
+        		'required' => false,
+    		))
+        	->add('description', 'textarea', array(
+        		'label' => 'Observações',
+        		'required' => false,
+    		))
         ;
     }
 

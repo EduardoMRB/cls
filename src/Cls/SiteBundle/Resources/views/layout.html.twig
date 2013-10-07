@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    {% block title %}<title>CLS Montagens Industriais</title>{% endblock %}
+    <meta charset="utf-8">
+    {% block stylesheets %}
+      {% stylesheets 'bundles/clssite/css/*' 'bundles/clssite/css/css/*' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}">
+      {% endstylesheets %}
+    {% endblock %}
+  </head>
+  <body>
+    <header></header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer></footer>
+    {% block javascripts %}
+      {% javascripts 'bundles/clssite/js/*' output='compiled/compiled.js' %}
+        <script src="{{ asset_url }}"></script>
+      {% endjavascripts %}
+    {% endblock %}
+  </body>
+</html>

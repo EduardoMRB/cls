@@ -1,0 +1,11 @@
+.left-text {
+    float: left;
+    margin-left: 30px;
+    width: 120px;
+}
+
+.right-text {
+    margin-right: 30px;
+    width: 150px;
+    float: right;
+}

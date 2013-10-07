@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <div class="header-wrapper">
+      <div class="header-wrapper default-block center">
         <a class="logo-anchor" href="{{ path('cls_home') }}">
           <img src="{{ asset('bundles/clssite/images/marca.jpg') }}" alt="CLS Montagens industriais" class="logo">
         </a>
@@ -27,10 +27,24 @@
       </div>
     </header>
 
+    {% block image_separator %}
+    {% endblock %}
+
     {% block content %}
     {% endblock %}
 
-    <footer></footer>
+    <footer>
+      <section class="upper-footer">
+        <div class="upper-footer-content"></div>
+      </section>
+
+      <section class="lower-footer">
+        <div class="default-block center">
+          <p class="left-text">Todos os direitos reservados</p>
+          <p class="right-text">Av. Dos Mineiros, 107 Belmonte Volta Redonda/RJ - CEP 27273-200</p>
+        </div>
+      </section>
+    </footer>
     {% block javascripts %}
       {% javascripts 'bundles/clssite/js/*.js' output='compiled/compiled.js' %}
         <script src="{{ asset_url }}"></script>

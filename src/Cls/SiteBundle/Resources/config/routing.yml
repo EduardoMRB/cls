@@ -1,3 +1,7 @@
+cls_home:
+    path: /
+    defaults: { _controller: ClsSiteBundle:Home:index }
+
 cls_site_estimate:
     path: /orcamento
     defaults: { _controller: ClsSiteBundle:Estimate:index }

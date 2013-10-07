@@ -4,20 +4,35 @@
     {% block title %}<title>CLS Montagens Industriais</title>{% endblock %}
     <meta charset="utf-8">
     {% block stylesheets %}
-      {% stylesheets 'bundles/clssite/css/*' 'bundles/clssite/css/css/*' filter='cssrewrite' %}
+      {% stylesheets 'bundles/clssite/css/*.css' 'bundles/clssite/css/css/*.css' filter='cssrewrite' %}
         <link rel="stylesheet" href="{{ asset_url }}">
       {% endstylesheets %}
     {% endblock %}
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="header-wrapper">
+        <a class="logo-anchor" href="{{ path('cls_home') }}">
+          <img src="{{ asset('bundles/clssite/images/marca.jpg') }}" alt="CLS Montagens industriais" class="logo">
+        </a>
+        <nav class="main-menu">
+          <ul class="menu-ul">
+            <li><a class="first" href="#">Home</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Orçamento</a></li>
+            <li><a class="last" href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     {% block content %}
     {% endblock %}
 
     <footer></footer>
     {% block javascripts %}
-      {% javascripts 'bundles/clssite/js/*' output='compiled/compiled.js' %}
+      {% javascripts 'bundles/clssite/js/*.js' output='compiled/compiled.js' %}
         <script src="{{ asset_url }}"></script>
       {% endjavascripts %}
     {% endblock %}

@@ -9,3 +9,7 @@
     width: 150px;
     float: right;
 }
+
+.upper-footer {
+    background: url('/bundles/clssite/images/footer-pattern.jpg');
+}

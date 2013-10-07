@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'Titillium Web Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/bundles/clssite/fonts/TitilliumWeb-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Titillium Web Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('/bundles/clssite/fonts/TitilliumWeb-Bold.ttf');
+}
+
+body {
+    font: 14px 'Titillium Web Regular' !important;
+    color: #6a6b6b;
+}
+
 .default-block {
     width: 1024px;
 }

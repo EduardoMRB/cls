@@ -5,4 +5,4 @@ services:
     cls.form.type.estimate:
         class: Cls\SiteBundle\Form\EstimateType
         tags:
-            - { name: form.type, alias: cls_estimate_form }
+            - { name: form.type, alias: cls_type_estimate }

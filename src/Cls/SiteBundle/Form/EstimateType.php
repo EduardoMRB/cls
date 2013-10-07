@@ -33,7 +33,7 @@ class EstimateType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Cls\SiteBudle\Entity\Estimate',
+            'data_class' => 'Cls\SiteBundle\Entity\Estimate',
         ));
     }
 

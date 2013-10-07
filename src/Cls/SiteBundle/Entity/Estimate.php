@@ -2,7 +2,7 @@
 
 namespace Cls\SiteBundle\Entity;
 
-use Doctrine\ORM\Mapper as ORM;
+use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -24,7 +24,7 @@ class Estimate
     /**
      * @var string
      * 
-     * @ORM\Column(name="email", type="string", length="50")
+     * @ORM\Column(name="email", type="string", length=50)
      * @Assert\Email(message="Por favor, insira um email valido")
      */
     protected $email;
@@ -32,7 +32,7 @@ class Estimate
     /**
      * @var string
      * 
-     * @ORM\Column(name="name", type="string", length="100")
+     * @ORM\Column(name="name", type="string", length=100)
      * @Assert\NotBlank(message="Campo 'nome' não pode estar vazio")
      */
     protected $name;
@@ -40,14 +40,14 @@ class Estimate
     /**
      * @var string
      * 
-     * @ORM\Column(name="phone", type="string", length="50")
+     * @ORM\Column(name="phone", type="string", length=50)
      */
     protected $phone;
 
     /**
      * @var string
      * 
-     * @ORM\Column(type="string", length="100", nullable=true)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     protected $path;
 

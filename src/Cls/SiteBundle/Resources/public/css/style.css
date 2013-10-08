@@ -39,7 +39,7 @@ section.content {
 }
 
 section.subitem {
-    width: 620px;
+    width: 560px;
     border-radius: 22px;
     margin-right: 50px;
 }
@@ -52,7 +52,7 @@ section.subitem h1 {
 }
 
 section.equipment {
-    width: 210px;
+    width: 229px;
     border-radius: 22px;
 }
 

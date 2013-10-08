@@ -4,4 +4,10 @@ cls_home:
 
 cls_site_estimate:
     path: /orcamento
+    methods: [GET]
     defaults: { _controller: ClsSiteBundle:Estimate:index }
+
+cls_estimate_create:
+    path: /orcamento
+    methods: [POST]
+    defaults: { _controller: ClsSiteBundle:Estimate:create }

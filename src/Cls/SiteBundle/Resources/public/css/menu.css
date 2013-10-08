@@ -35,7 +35,8 @@
    font-size: 18px;
 }
 
-.menu-ul li a:hover {
+.menu-ul li a:hover,
+.menu-ul li a.active {
    color: #136ca8;
 }
 

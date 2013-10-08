@@ -11,3 +11,13 @@ cls_estimate_create:
     path: /orcamento
     methods: [POST]
     defaults: { _controller: ClsSiteBundle:Estimate:create }
+
+cls_institutional:
+    path: /empresa
+    methods: [GET]
+    defaults: { _controller: ClsSiteBundle:Institutional:index }
+
+cls_services:
+    path: /servicos
+    methods: [GET]
+    defaults: { _controller: ClsSiteBundle:Services:index }

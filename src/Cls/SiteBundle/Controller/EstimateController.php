@@ -16,11 +16,32 @@ class EstimateController extends Controller
      */
     public function indexAction()
     {
-        $estimate = new Estimate();
-        $form = $this->createForm('cls_type_estimate', $estimate);
+        $form = $this->createForm('cls_type_estimate');
 
         return $this->render('ClsSiteBundle:Estimate:index.html.twig', array(
             'form' => $form->createView(),
         ));
+    }
+
+    public function createAction(Request $request)
+    {
+    	$form = $this->createForm('cls_type_estimate');
+    	$form->handleRequest($request);
+
+    	if (!$form->isValid()) {
+    		return $this->render('ClsSiteBundle:Estimate:index.html.twig', array(
+	            'form' => $form->createView(),
+	        ));
+    	}
+
+    	$estimate = $form->getData();
+    	$estimate->upload();
+    	$em = $this->getDoctrine()->getManager();
+    	$em->persist($estimate);
+    	$em->flush();
+
+    	$this->get('session')->getFlashBag()->add('success', 'Pedido de orçamento enviado, em breve entraremos em contato');
+
+    	return $this->redirect($this->generateUrl('cls_home'));
     }
 }

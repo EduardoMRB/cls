@@ -7,7 +7,7 @@
       <h1>Orçamento</h1>
       <p>Obrigado por confiar em nosso trabalho! O objetivo do questionário é ajudar-nos a conhecer o seu projeto. E com isso gerar um orçamento coerente.</p>
 
-      <form class="form-estimate" action="{{ path('cls_estimate_create') }}" method="POST" enctype="multiplart/form-data">
+      <form class="form-estimate" action="{{ path('cls_estimate_create') }}" method="POST" enctype="multipart/form-data">
         <div class="fields fields-left">
           {{ form_widget(form.name, {'attr': {'placeholder': 'Nome'}}) }}
           {{ form_widget(form.email, {'attr': {'placeholder': 'Email'}}) }}

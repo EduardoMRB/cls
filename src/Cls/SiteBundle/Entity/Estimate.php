@@ -104,7 +104,7 @@ class Estimate
     /**
      * @param \Symfony\Component\HttpFoundation\File\UploadedFile $file
      */
-    public function setFile(UploadedFile $file)
+    public function setFile(UploadedFile $file = null)
     {
         $this->file = $file;
         
@@ -233,10 +233,10 @@ class Estimate
     	if (null === $this->getFile()) {
     		return;
     	}
-
+    	
     	// Move arquivo temporario para pasta de uploads
     	$this->getFile()->move(
-    		$this->getUploadRootDir,
+    		$this->getUploadRootDir(),
     		$this->getFile()->getClientOriginalName()
 		);
 

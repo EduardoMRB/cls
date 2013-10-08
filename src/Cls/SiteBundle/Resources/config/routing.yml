@@ -21,3 +21,8 @@ cls_services:
     path: /servicos
     methods: [GET]
     defaults: { _controller: ClsSiteBundle:Services:index }
+
+cls_contact:
+    path: /fale-conosco
+    methods: [GET]
+    defaults: { _controller: ClsSiteBundle:Contact:index }

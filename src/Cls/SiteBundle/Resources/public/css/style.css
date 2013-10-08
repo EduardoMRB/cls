@@ -14,7 +14,7 @@
 
 body {
     font: 14px 'Titillium Web Regular' !important;
-    color: #6a6b6b;
+    color: #6a6b6b !important;
 }
 
 .default-block {
@@ -23,4 +23,21 @@ body {
 
 .center {
     margin: 0 auto;
+}
+
+section.content {
+    background: url('/bundles/clssite/images/content-pattern.jpg');
+    min-height: 500px;
+}
+
+section.subitem {
+    width: 620px;
+    background: #fff;
+    border-radius: 22px;
+}
+
+section.equipment {
+    width: 210px;
+    background: #fff;
+    border-radius: 22px;
 }

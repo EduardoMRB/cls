@@ -74,3 +74,12 @@ section.equipment p {
     width: 100%;
     display: block;
 }
+
+.fields {
+    width: 260px;
+    float: left;
+}
+
+.fields-left {
+    margin-right: 30px;
+}

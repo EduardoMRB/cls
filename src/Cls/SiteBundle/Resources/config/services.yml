@@ -6,3 +6,8 @@ services:
         class: Cls\SiteBundle\Form\EstimateType
         tags:
             - { name: form.type, alias: cls_type_estimate }
+
+    cls.form.type.contact:
+        class: Cls\SiteBundle\Form\ContactType
+        tags:
+            - { name: form.type, alias: cls_type_contact }

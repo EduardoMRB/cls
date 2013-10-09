@@ -1,14 +1,5 @@
-.fields {
-    width: 260px;
-    float: left;
-}
-
-.fields-left {
-    margin-right: 30px;
-}
-
-form.form-estimate input,
-form.form-estimate textarea {
+form.form-cls input,
+form.form-cls textarea {
     padding: 10px 15px;
     border: 1px solid #e0dddd;
     width: 228px;
@@ -16,23 +7,23 @@ form.form-estimate textarea {
     margin-bottom: 10px;
 }
 
-form.form-estimate input {
+form.form-cls input {
     height: 18px;
 }
 
-form.form-estimate input[type="submit"] {
+form.form-cls input[type="submit"] {
     height: 40px;
     width: 260px;
     background: #f2f2f2;
     color: #6a6b6b;
 }
 
-form.form-estimate input[type="submit"]:hover {
+form.form-cls input[type="submit"]:hover {
     background: #136ca8;
     color: #fff;
 }
 
-form.form-estimate textarea {
+form.form-cls textarea {
     height: 118px;
     max-height: 118px;
     max-width: 230px;

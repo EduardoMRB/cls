@@ -8,6 +8,10 @@ class ContactController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ClsSiteBundle:Contact:index.html.twig');
+    	$form = $this->createForm('cls_type_contact');
+
+        return $this->render('ClsSiteBundle:Contact:index.html.twig', array(
+        	'form' => $form->createView(),
+    	));
     }
 }

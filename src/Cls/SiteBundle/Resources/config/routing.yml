@@ -26,3 +26,8 @@ cls_contact:
     path: /fale-conosco
     methods: [GET]
     defaults: { _controller: ClsSiteBundle:Contact:index }
+
+cls_contact_send:
+    path: /fale-conosco
+    methods: [POST]
+    defaults: { _controller: ClsSiteBundle:Contact:send }

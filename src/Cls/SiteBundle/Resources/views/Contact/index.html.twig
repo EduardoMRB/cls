@@ -10,6 +10,24 @@
     <section class="subitem inner">
       <h1>Contato</h1>
       <p>Para contactar a CLS, você pode optar por várias possibilidades. Para contato imediato através do site, utilize o formuĺário abaixo. Os suportes móveis estão ao lado.</p>
+
+      <div class="fields-left">
+        <strong>Cláudio Leandro</strong> (Diretor)<br />
+        Cel +55 24 999942-6493<br />
+        Nextel *55 98*1255<br />
+        Tel +55 24 3350-6769<br />
+        claudio.silva@clsmontagens.com.br<br /><br />
+        Av. Dos Mineiros, 107 Belmonte<br />
+        Volta Redonda/RJ - CEP:27273-200<br />
+        <iframe style="margin-top: 10px;" width="260" height="110" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt&amp;geocode=&amp;q=Av.+Dos+Mineiros,+107+Belmonte&amp;aq=&amp;sll=-15.45443,-55.842543&amp;sspn=1.07875,1.660309&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Mineiros,+107+-+Belmonte,+Volta+Redonda+-+Rio+de+Janeiro,+27210-580&amp;t=m&amp;ll=-22.514856,-44.129505&amp;spn=0.008722,0.02223&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a target="_blank" href="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt&amp;geocode=&amp;q=Av.+Dos+Mineiros,+107+Belmonte&amp;aq=&amp;sll=-15.45443,-55.842543&amp;sspn=1.07875,1.660309&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Mineiros,+107+-+Belmonte,+Volta+Redonda+-+Rio+de+Janeiro,+27210-580&amp;t=m&amp;ll=-22.514856,-44.129505&amp;spn=0.008722,0.02223&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">Ver mapa maior</a></small>
+      </div>
+      <div class="fields">
+        <form action="{{ path('cls_contact_send') }}" method="POST" class="form-cls">
+          {{ form_widget(form.name, {'attr': {'placeholder': 'Nome'}}) }}
+          {{ form_widget(form.email, {'attr': {'placeholder': 'Email'}}) }}
+          {{ form_widget(form.message, {'attr': {'placeholder': 'Mensagem'}}) }}
+        </form>
+      </div>
     </section>
 
     <section class="equipment inner">

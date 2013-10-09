@@ -1,12 +1,12 @@
 {% extends 'ClsSiteBundle::layout.html.twig' %}
 
 {% block image_separator %}
-  <img src="{{ asset('bundles/clssite/images/maincall_1.jpg') }}" alt="Projetos de alta qualidade industrial">
+  <img class="img-separator" src="{{ asset('bundles/clssite/images/maincall_1.jpg') }}" alt="Projetos de alta qualidade industrial" />
 {% endblock %}
 
 {% block content %}
   <section class="content">
-    <div class="default-block center clearfix">
+    <div class="home-section-block center clearfix">
       <div class="portrait-wrapper">
         <a href="{{ path('cls_institutional') }}">
           <img src="{{ asset('bundles/clssite/images/historia.png') }}" alt="Nossa história" class="portrait-img">

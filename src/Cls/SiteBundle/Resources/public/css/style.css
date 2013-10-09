@@ -27,7 +27,6 @@ body {
 
 section.content {
     background: url('/bundles/clssite/images/content-pattern.jpg');
-    min-height: 500px;
 }
 
 .inner {
@@ -69,4 +68,9 @@ section.equipment p {
 
 .content-wrapper {
     margin: 0 auto;
+}
+
+.img-separator {
+    width: 100%;
+    display: block;
 }

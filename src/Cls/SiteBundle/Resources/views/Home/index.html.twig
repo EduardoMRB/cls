@@ -3,3 +3,28 @@
 {% block image_separator %}
   <img src="{{ asset('bundles/clssite/images/maincall_1.jpg') }}" alt="Projetos de alta qualidade industrial">
 {% endblock %}
+
+{% block content %}
+  <section class="content">
+    <div class="default-block center clearfix">
+      <div class="portrait-wrapper">
+        <a href="{{ path('cls_institutional') }}">
+          <img src="{{ asset('bundles/clssite/images/historia.png') }}" alt="Nossa história" class="portrait-img">
+          <div class="portrait-text"><span>Veja nossa história.</span></div>
+        </a>
+      </div>
+      <div class="portrait-wrapper middle">
+        <a href="{{ path('cls_services') }}">
+          <img src="{{ asset('bundles/clssite/images/servicos.png') }}" alt="Nossos serviços" class="portrait-img">
+          <div class="portrait-text"><span>Conheça nossos serviços.</span></div>
+        </a>
+      </div>
+      <div class="portrait-wrapper">
+        <a href="{{ path('cls_estimate') }}">
+          <img src="{{ asset('bundles/clssite/images/orcamento.png') }}" alt="Peça seu orçamento" class="portrait-img">
+          <div class="portrait-text"><span>Faça já seu orçamento.</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

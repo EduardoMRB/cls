@@ -5,6 +5,10 @@
     margin: 50px 0;
 }
 
+.portrait-wrapper a:hover {
+    text-decoration: none;
+}
+
 .portrait-wrapper.middle {
     margin: 50px 50px;
 }

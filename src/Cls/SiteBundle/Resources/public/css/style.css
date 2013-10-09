@@ -18,7 +18,7 @@ body {
 }
 
 .default-block {
-    width: 1024px;
+    width: 960px;
 }
 
 .center {
@@ -93,6 +93,7 @@ section.equipment p {
 
 .left-arrow {
     background: url('/bundles/clssite/images/icon_anterior.jpg');
+    margin-right: 10px;
 }
 
 .left-arrow:hover {

@@ -1,13 +1,15 @@
-.left-text {
+.footer-text.left {
     float: left;
-    margin-left: 30px;
-    width: 120px;
 }
 
-.right-text {
-    margin-right: 30px;
-    width: 150px;
+.footer-text.right {
     float: right;
+}
+
+.footer-text {
+    width: 228px;
+    margin: 50px 29px;
+    line-height: 17px;
 }
 
 .upper-footer {
@@ -65,5 +67,5 @@
     float: right;
     position: relative;
     bottom: 36px;
-    right: 30px;
+    right: 19px;
 }

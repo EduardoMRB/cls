@@ -11,3 +11,7 @@ services:
         class: Cls\SiteBundle\Form\ContactType
         tags:
             - { name: form.type, alias: cls_type_contact }
+
+    cls.contact.mailer:
+        class: Cls\SiteBundle\Mail\ContactMail
+        arguments: ['@mailer', '@templating', '%mailer_user%']

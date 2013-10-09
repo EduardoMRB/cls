@@ -26,9 +26,11 @@
           {{ form_widget(form.name, {'attr': {'placeholder': 'Nome'}}) }}
           {{ form_widget(form.email, {'attr': {'placeholder': 'Email'}}) }}
           {{ form_widget(form.message, {'attr': {'placeholder': 'Mensagem'}}) }}
+          {{ form_rest(form) }}
           <input type="submit" value="Enviar">
         </form>
       </div>
+      <div class="form-errors">{{ form_errors(form) }}</div>
     </section>
 
     <section class="equipment inner">

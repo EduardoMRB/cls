@@ -83,3 +83,28 @@ section.equipment p {
 .fields-left {
     margin-right: 30px;
 }
+
+.arrow {
+    display: block;
+    height: 23px;
+    width: 14px;
+    float: left;
+}
+
+.left-arrow {
+    background: url('/bundles/clssite/images/icon_anterior.jpg');
+}
+
+.left-arrow:hover {
+    background: url('/bundles/clssite/images/icon_anterior_hover.jpg');
+    cursor: pointer;
+}
+
+.right-arrow {
+    background: url('/bundles/clssite/images/icon_proximo.jpg');
+}
+
+.right-arrow:hover {
+    background: url('/bundles/clssite/images/icon_proximo_hover.jpg');
+    cursor: pointer;
+}

@@ -60,3 +60,10 @@
 .image-left {
     float: left;
 }
+
+.footer-arrow-wrapper {
+    float: right;
+    position: relative;
+    bottom: 36px;
+    right: 30px;
+}

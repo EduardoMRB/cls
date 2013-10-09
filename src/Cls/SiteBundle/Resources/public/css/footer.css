@@ -24,29 +24,37 @@
 }
 
 .upper-item {
-    width: 30%;
+    width: 25%;
     float: left;
-    height: 100%;
-    padding: 10px;
+    height: 64%;
+    padding: 29px;
 }
 
 .upper-item h3 {
     color: #136ca8;
     font-size: 18px;
-    margin-bottom: 0;
+    margin: 0 0 13px 0;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+.upper-item p {
+    margin: 0;
+    line-height: 18px;
+    width: 228px;
 }
 
 .upper-item.middle {
-    padding-left: 31px;
+    padding-left: 55px;
     width: 24%;
 }
 
 .upper-item.first {
-    margin-right: 40px;
+    /*margin-right: 40px;*/
 }
 
 .upper-item.last {
-    margin-left: 40px;
+    margin-left: 29px;
 }
 
 .image-left {

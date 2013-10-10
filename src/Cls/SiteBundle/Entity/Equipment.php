@@ -40,6 +40,13 @@ class Equipment
     protected $path;
 
     /**
+     * @var boolean
+     * 
+     * @ORM\Column(type="boolean")
+     */
+    protected $enabled;
+
+    /**
      * @var string
      * 
      * @ORM\Column(type="text")
@@ -97,6 +104,18 @@ class Equipment
     public function getDescription()
     {
         return $this->description;
+    }
+
+    public function setEnabled($enabled)
+    {
+    	$this->enabled = $enabled;
+
+    	return $this;
+    }
+
+    public function isEnabled()
+    {
+    	return $this->enabled;
     }
 
     public function getAbsolutePath()

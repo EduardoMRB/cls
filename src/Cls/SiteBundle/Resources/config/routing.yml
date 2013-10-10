@@ -31,3 +31,7 @@ cls_contact_send:
     path: /fale-conosco
     methods: [POST]
     defaults: { _controller: ClsSiteBundle:Contact:send }
+
+cls_equipment_list:
+    path: /equipamentos
+    defaults: { _controller: ClsSiteBundle:Equipment:list }

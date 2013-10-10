@@ -18,6 +18,12 @@ class EquipmentAdmin extends Admin
             ->add('description', null, array(
                 'label' => 'Descrição',
             ))
+            ->add('enabled', null, array(
+            	'label' => 'Habilitado',
+            	'attr' => array(
+            		'checked' => true,
+        		),
+        	))
             ->add('image', 'file', array(
                 'label' => 'Imagem',
                 'required' => false,
@@ -31,6 +37,10 @@ class EquipmentAdmin extends Admin
             ->addIdentifier('name', null, array(
                 'label' => 'Nome',
             ))
+            ->add('enabled', null, array(
+            	'editable' => true,
+            	'label' => 'Habilitado',
+        	))
         ;   
     }
 

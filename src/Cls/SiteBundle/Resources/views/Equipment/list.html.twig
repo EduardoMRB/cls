@@ -1,0 +1,5 @@
+<h2>Equipamentos</h2>
+{% for item in equipment %}
+<img src="{{ asset(item.getWebPath) }}" alt="Equipamento cls">
+<p>{{ item.description }}</p>
+{% endfor %}

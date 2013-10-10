@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping
+        http://symfony.com/schema/dic/services/constraint-mapping-1.0.xsd">
+
+
+    <class name="Application\Sonata\NewsBundle\Entity\Post">
+        <getter property="title">
+            <constraint name="NotBlank" />
+        </getter>
+
+        <getter property="abstract">
+            <constraint name="NotBlank" />
+        </getter>
+
+        <getter property="author">
+            <constraint name="Valid" />
+        </getter>
+
+        <getter property="rawContent">
+            <constraint name="NotBlank"/>
+        </getter>
+
+        <getter property="tags">
+            <constraint name="Valid" />
+        </getter>
+
+        <getter property="commentsDefaultStatus">
+            <constraint name="NotBlank" />
+        </getter>
+    </class>
+
+    <class name="Application\Sonata\NewsBundle\Entity\Comment">
+        <getter property="name">
+           <constraint name="NotBlank" />
+           <constraint name="NotNull" />
+        </getter>
+
+        <getter property="email">
+            <constraint name="Email" />
+        </getter>
+
+        <getter property="url">
+           <constraint name="Url" />
+        </getter>
+
+        <getter property="message">
+            <constraint name="NotNull" />
+            <constraint name="NotBlank" />
+        </getter>
+
+        <getter property="post">
+            <constraint name="Valid" />
+        </getter>
+
+    </class>
+
+    <class name="Application\Sonata\NewsBundle\Entity\Category">
+        <getter property="name">
+            <constraint name="NotBlank" />
+            <constraint name="NotNull" />
+            <constraint name="Length">
+               <option name="min">2</option>
+               <option name="max">32</option>
+           </constraint>
+        </getter>
+    </class>
+
+    <class name="Application\Sonata\NewsBundle\Entity\Tag">
+        <getter property="name">
+            <constraint name="NotBlank" />
+            <constraint name="NotNull" />
+            <constraint name="Length">
+               <option name="min">2</option>
+               <option name="max">32</option>
+           </constraint>
+        </getter>
+    </class>
+
+</constraint-mapping>

@@ -1,0 +1,36 @@
+{
+    "name": "sonata-project/formatter-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony SonataFormatterBundle",
+    "keywords": ["sonata", "formatter", "markdown", "ckeditor", "markitup"],
+    "homepage": "http://sonata-project.org/bundles/formatter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Rabaix",
+            "email": "thomas.rabaix@sonata-project.org",
+            "homepage": "http://sonata-project.org"
+        },
+        {
+            "name": "Sonata Community",
+            "homepage": "https://github.com/sonata-project/SonataFormatterBundle/contributors"
+        }
+    ],
+    "require": {
+        "symfony/symfony": ">=2.3,<2.4-dev",
+        "twig/twig": "*",
+        "knplabs/knp-markdown-bundle": "1.2.*@dev",
+        "sonata-project/markitup-bundle": "2.1.*",
+        "egeloen/ckeditor-bundle": "2.*",
+        "sonata-project/block-bundle": ">=2.2.1"
+    },
+    "autoload": {
+        "psr-0": { "Sonata\\FormatterBundle": "" }
+    },
+    "target-dir": "Sonata/FormatterBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.3.x-dev"
+        }
+    }
+}

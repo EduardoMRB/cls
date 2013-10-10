@@ -190,7 +190,7 @@ class Estimate
     {
     	return null === $this->path
     		? null
-    		: $this->getUploadRootDir . '/' . $this->path;
+    		: $this->getUploadRootDir() . '/' . $this->path;
     }
 
     /**
@@ -202,7 +202,7 @@ class Estimate
     {
     	return null === $this->path
     		? null
-    		: $this->getUploadDir . '/' . $this->path;
+    		: $this->getUploadDir() . '/' . $this->path;
     }
 
     /**

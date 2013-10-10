@@ -109,3 +109,9 @@ section.equipment p {
     background: url('/bundles/clssite/images/icon_proximo_hover.jpg');
     cursor: pointer;
 }
+
+.equipment-controls {
+    position: relative;
+    float: right;
+    bottom: 24px;
+}

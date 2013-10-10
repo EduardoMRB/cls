@@ -4,7 +4,10 @@
     {% block title %}<title>CLS Montagens Industriais</title>{% endblock %}
     <meta charset="utf-8">
     {% block stylesheets %}
-      {% stylesheets 'bundles/clssite/css/*.css' 'bundles/clssite/css/css/*.css' filter='cssrewrite' %}
+      {% stylesheets 'bundles/clssite/css/*.css' 
+                     'bundles/clssite/css/css/*.css'
+                     'bundles/clssite/css/carousel/*.css'
+                      filter='cssrewrite' %}
         <link rel="stylesheet" href="{{ asset_url }}">
       {% endstylesheets %}
     {% endblock %}

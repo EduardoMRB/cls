@@ -1,5 +1,23 @@
 <h2>Equipamentos</h2>
-{% for item in equipment %}
-<img src="{{ asset(item.getWebPath) }}" alt="Equipamento cls">
-<p>{{ item.description }}</p>
-{% endfor %}
+<div id="equipment-carousel" class="carousel slide">
+  <div class="equipment-controls">
+    <a href="#equipment-carousel" class="carousel-control-left arrow left-arrow" data-slide="prev"></a>
+    <a href="#equipment-carousel" class="carousel-control-right arrow right-arrow" data-slide="next"></a>
+  </div>
+  
+  <div class="carousel-inner">
+    {% for item in equipment %}
+    {% if loop.first %}
+      <div class="active item">
+        <img src="{{ asset(item.getWebPath) }}" alt="Equipamento cls">
+        <p>{{ item.description }}</p>
+      </div>
+    {% else %}
+      <div class="item">
+        <img src="{{ asset(item.getWebPath) }}" alt="Equipamento cls">
+        <p>{{ item.description }}</p>
+      </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

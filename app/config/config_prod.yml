@@ -5,9 +5,9 @@ doctrine:
     orm:
         entity_managers:
             default:
-                metadata_cache_driver: apc
-                query_cache_driver: apc
-                result_cache_driver: apc
+                metadata_cache_driver: array
+                query_cache_driver: array
+                result_cache_driver: array
 
 monolog:
     handlers:

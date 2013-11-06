@@ -2,7 +2,10 @@
     font-family: 'Titillium Web Regular';
     font-weight: normal;
     font-style: normal;
-    src: url('/bundles/clssite/fonts/TitilliumWeb-Regular.ttf');
+    src: url('/bundles/clssite/fonts/titilliumweb-regular-webfont.eot');
+    src: url('/bundles/clssite/fonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/bundles/clssite/fonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('/bundles/clssite/fonts/TitilliumWeb-Regular.ttf') format('truetype');
 }
 
 @font-face {

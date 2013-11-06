@@ -40,6 +40,9 @@ class EstimateController extends Controller
     	$em->persist($estimate);
     	$em->flush();
 
+    	$estimateNotification = $this->get('cls.estimate.mailer');
+    	$estimateNotification->sendMailNotification($estimate);
+
     	$this->get('session')->getFlashBag()->add('success', 'Pedido de orçamento enviado, em breve entraremos em contato');
 
     	return $this->redirect($this->generateUrl('cls_home'));

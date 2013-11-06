@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
  * @ORM\Entity()
  * @ORM\Table(name="estimate")
  */
-class Estimate
+class Estimate implements EstimateInterface
 {
     /**
      * @var integer

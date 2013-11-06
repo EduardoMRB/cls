@@ -16,6 +16,10 @@ services:
         class: Cls\SiteBundle\Mail\ContactMail
         arguments: ['@mailer', '@templating', '%mailer_user%']
 
+    cls.estimate.mailer:
+        class: Cls\SiteBundle\Mail\EstimateNotification
+        arguments: ['@mailer', '@templating', '%mailer_user%']
+
     cls.admin.equipment:
         class: Cls\SiteBundle\Admin\EquipmentAdmin
         tags:

@@ -115,3 +115,16 @@ section.equipment p {
     float: right;
     bottom: 24px;
 }
+
+
+/* FLASH MESSAGES*/
+.notice {
+  height: 38px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.notice-success {
+  background: #00c882;
+  color: #fff;
+}

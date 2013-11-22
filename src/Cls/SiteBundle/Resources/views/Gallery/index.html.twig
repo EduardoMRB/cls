@@ -1,0 +1,20 @@
+{% extends 'ClsSiteBundle::layout.html.twig' %}
+
+{% block image_separator %}
+  <img class="img-separator" src="{{ asset('bundles/clssite/images/maincall_2.jpg') }}" alt="Projetos de alta qualidade industrial" />
+{% endblock %}
+
+{% block content %}
+<section class="content">
+  <div class="default-block center clearfix content-wrapper">
+    <section class="subitem inner">
+      <h1>Serviços realizados</h1>
+      
+    </section>
+
+    <section class="equipment inner">
+      {{ render(url('cls_equipment_list')) }}
+    </section>
+  </div>
+</section>
+{% endblock %}

@@ -35,3 +35,8 @@ cls_contact_send:
 cls_equipment_list:
     path: /equipamentos
     defaults: { _controller: ClsSiteBundle:Equipment:list }
+
+cls_gallery:
+    path: /galeria
+    methods: [GET]
+    defaults: { _controller: ClsSiteBundle:ImageGallery:index }

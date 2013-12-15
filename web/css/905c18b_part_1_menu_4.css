@@ -1,0 +1,49 @@
+.header-wrapper {
+   overflow: hidden;
+   height: 215px;
+}
+
+.logo-anchor {
+   float: left;
+   margin: 50px 0;
+}
+
+.main-menu {
+    background-image: url('/bundles/clssite/images/bg_menu.jpg');
+    width: 552px;
+    height: 50px;
+    float: left;
+    margin: 80px 0 80px 95px;
+}
+
+.menu-ul {
+    padding: 0;
+    position: relative;
+    left: 11px;
+    margin: 0;
+}
+
+.menu-ul li {
+   display: inline;
+}
+
+.menu-ul li a {
+   display: inline-block;
+   padding: 15px 19px;
+   text-decoration: none;
+   color: #6a6b6b;
+   font-size: 18px;
+}
+
+.menu-ul li a:hover,
+.menu-ul li a.active {
+   color: #136ca8;
+}
+
+.menu-ul li a.first {
+   padding-left: 23px
+}
+
+.menu-ul li a.last {
+   padding-left: 21px
+}

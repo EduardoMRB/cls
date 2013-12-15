@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Titillium Web Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/bundles/clssite/fonts/titilliumweb-regular-webfont.eot');
+    src: url('/bundles/clssite/fonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/bundles/clssite/fonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('/bundles/clssite/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Titillium Web Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('/bundles/clssite/fonts/TitilliumWeb-Bold.ttf');
+}
+
+body {
+    font: 14px 'Titillium Web Regular' !important;
+    color: #6a6b6b !important;
+}
+
+.default-block {
+    width: 960px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+section.content {
+    background: url('/bundles/clssite/images/content-pattern.jpg');
+}
+
+.inner {
+    min-height: 410px;
+    background: #fff;
+    padding: 30px;
+    float: left;
+    margin: 50px 0;
+}
+
+section.subitem {
+    width: 560px;
+    border-radius: 22px;
+    margin-right: 50px;
+}
+
+section.subitem h1 {
+    font-size: 18px;
+    color: #136ca8;
+    line-height: 26px;
+    margin: 0;
+}
+
+section.equipment {
+    width: 229px;
+    border-radius: 22px;
+}
+
+section.equipment h2 {
+    font-size: 18px;
+    color: #136ca8;
+    line-height: 26px;
+    margin: 0;
+}
+
+section.equipment p {
+    margin-top: 10px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+}
+
+.img-separator {
+    width: 100%;
+    display: block;
+}
+
+.fields {
+    width: 260px;
+    float: left;
+}
+
+.fields-left {
+    margin-right: 30px;
+}
+
+.arrow {
+    display: block;
+    height: 23px;
+    width: 14px;
+    float: left;
+}
+
+.left-arrow {
+    background: url('/bundles/clssite/images/icon_anterior.jpg');
+    margin-right: 10px;
+}
+
+.left-arrow:hover {
+    background: url('/bundles/clssite/images/icon_anterior_hover.jpg');
+    cursor: pointer;
+}
+
+.right-arrow {
+    background: url('/bundles/clssite/images/icon_proximo.jpg');
+}
+
+.right-arrow:hover {
+    background: url('/bundles/clssite/images/icon_proximo_hover.jpg');
+    cursor: pointer;
+}
+
+.equipment-controls {
+    position: relative;
+    float: right;
+    bottom: 24px;
+}
+
+
+/* FLASH MESSAGES*/
+.notice {
+  height: 38px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.notice-success {
+  background: #00c882;
+  color: #fff;
+}

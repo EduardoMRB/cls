@@ -1,0 +1,46 @@
+.portrait-wrapper {
+    width: 285px;
+    height: 246px;
+    float: left;
+    margin: 50px 0;
+}
+
+.portrait-wrapper a:hover {
+    text-decoration: none;
+}
+
+.portrait-wrapper.middle {
+    margin: 50px 50px;
+}
+
+.portrait-text {
+    background: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    color: #136ca8;
+    height: 60px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    bottom: 6px;
+}
+
+.portrait-text span {
+    position: relative;
+    top: 15px;
+    display: block;
+    width: 90%;
+    padding-left: 29px;
+}
+
+.portrait-wrapper a {
+    text-decoration: none;
+}
+
+.portrait-wrapper a:hover > .portrait-text {
+    background: #136ca8;
+    color: #fff;
+}
+
+.home-section-block {
+    width: 955px;
+}

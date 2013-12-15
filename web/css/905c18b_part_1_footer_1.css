@@ -1,0 +1,71 @@
+.footer-text.left {
+    float: left;
+}
+
+.footer-text.right {
+    float: right;
+}
+
+.footer-text {
+    width: 228px;
+    margin: 50px 29px;
+    line-height: 17px;
+}
+
+.upper-footer {
+    background: url('/bundles/clssite/images/footer-pattern.jpg');
+    height: 250px;
+}
+
+.upper-footer-content {
+    background: #fff;
+    border-radius: 22px;
+    height: 135px;
+    position: relative;
+    top: 50px;
+}
+
+.upper-item {
+    width: 25%;
+    float: left;
+    height: 64%;
+    padding: 29px;
+}
+
+.upper-item h3 {
+    color: #136ca8;
+    font-size: 18px;
+    margin: 0 0 13px 0;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+.upper-item p {
+    margin: 0;
+    line-height: 18px;
+    width: 228px;
+}
+
+.upper-item.middle {
+    padding-left: 55px;
+    width: 24%;
+}
+
+.upper-item.first {
+    /*margin-right: 40px;*/
+}
+
+.upper-item.last {
+    margin-left: 29px;
+}
+
+.image-left {
+    float: left;
+}
+
+.footer-arrow-wrapper {
+    float: right;
+    position: relative;
+    bottom: 36px;
+    right: 19px;
+}
